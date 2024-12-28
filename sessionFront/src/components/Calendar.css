@@ -1,0 +1,90 @@
+.calendar {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  
+  .current-month {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-button {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .nav-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .weekdays-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #f3f4f6;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .weekday {
+    text-align: center;
+    font-weight: 600;
+    color: #4b5563;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #e5e7eb;
+  }
+  
+  .calendar-day {
+    height: 6rem;
+    background-color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .calendar-day:hover {
+    background-color: #f0f9ff;
+  }
+  
+  .calendar-day.empty {
+    background-color: #f9fafb;
+  }
+  
+  .calendar-day.today {
+    background-color: #e0f2fe;
+  }
+  
+  .day-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+  }
+  
+  .today .day-number {
+    background-color: #3b82f6;
+    color: white;
+  }
