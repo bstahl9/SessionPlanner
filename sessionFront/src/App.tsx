@@ -1,14 +1,12 @@
-import { useState } from 'react'
 import './App.css'
+import Calendar from './components/Calendar' 
 
 function App() {
-	const [count, setCount] = useState(0)
-
-	return (
-		<>
-			<h1>Session</h1>
-		</>
-	)
+  return (
+    <div className="p-8">
+      <Calendar />
+    </div>
+  )
 }
 
 export default App
