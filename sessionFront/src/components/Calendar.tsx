@@ -2,32 +2,32 @@ import React, { useState } from 'react';
 import './Calendar.css';
 
 const Calendar = () => {
-  const [currentDate, setCurrentDate] = useState(new Date());
-  
-  const daysInMonth = new Date(
-    currentDate.getFullYear(),
-    currentDate.getMonth() + 1,
-    0
-  ).getDate();
-  
-  const firstDayOfMonth = new Date(
-    currentDate.getFullYear(),
-    currentDate.getMonth(),
-    1
-  ).getDay();
-  
-  const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
+	const [currentDate, setCurrentDate] = useState(new Date());
 
-  const handlePrevMonth = () => {
-    setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)));
-  };
+	const daysInMonth = new Date(
+		currentDate.getFullYear(),
+		currentDate.getMonth() + 1,
+		0
+	).getDate();
 
-  const handleNextMonth = () => {
-    setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() + 1)));
-  };
+	const firstDayOfMonth = new Date(
+		currentDate.getFullYear(),
+		currentDate.getMonth(),
+		1
+	).getDay();
+
+	const monthNames = [
+		"January", "February", "March", "April", "May", "June",
+		"July", "August", "September", "October", "November", "December"
+	];
+
+	const handlePrevMonth = () => {
+		setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)));
+	};
+
+	const handleNextMonth = () => {
+		setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() + 1)));
+	};
 
   const renderCalendarDays = () => {
     const days = [];

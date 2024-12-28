@@ -4,7 +4,7 @@ import Calendar from './components/Calendar'
 function App() {
   return (
     <div className="p-8">
-      <Calendar />
+      <Calendar/>
     </div>
   )
 }
